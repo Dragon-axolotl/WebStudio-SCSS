@@ -1,0 +1,117 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(370px,1fr));
+  gap: 30px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.card {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 250ms cubic-bezier(0.4,0,0.2,1),
+              box-shadow 250ms cubic-bezier(0.4,0,0.2,1);
+  display: flex;
+  flex-direction: column;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+  }
+
+  .info {
+    padding: 15px;
+
+    h3 {
+      font-size: 20px;
+      margin: 10px 0 5px;
+    }
+
+    p {
+      color: #777;
+      font-size: 16px;
+    }
+  }
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  list-style: none;
+  margin-bottom: 30px;
+  padding: 0;
+
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 250ms cubic-bezier(0.4,0,0.2,1),
+                color 250ms cubic-bezier(0.4,0,0.2,1),
+                border-color 250ms cubic-bezier(0.4,0,0.2,1);
+
+    &.active,
+    &:hover {
+      background: var(--main-color);
+      color: #fff;
+      border-color: var(--main-color);
+    }
+  }
+}
+
+.card.hover {
+  .img-wrapper {
+    position: relative;
+    display: inline-block;
+
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(52, 152, 219, 0.7);
+      opacity: 0;
+      border-radius: 8px 8px 0 0;
+      z-index: 1;
+      transition: opacity 250ms cubic-bezier(0.4,0,0.2,1);
+    }
+
+    &:hover::before {
+      opacity: 1;
+    }
+
+    .overlay-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+      font-size: 18px;
+      font-weight: 600;
+      text-align: center;
+      opacity: 0;
+      z-index: 2;
+      transition: opacity 250ms cubic-bezier(0.4,0,0.2,1);
+    }
+
+    &:hover .overlay-text {
+      opacity: 1;
+    }
+  }
+}
+
+.overlay-text {
+  width: 322px;
+  height: 168px;
+}
