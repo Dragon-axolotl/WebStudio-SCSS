@@ -115,7 +115,7 @@ body {
 }
 
 .hero {
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("./img/Img.svg");
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/Img.svg");
   background-size: cover;
   background-position: center;
   text-align: center;
@@ -175,16 +175,16 @@ body {
   background-size: contain;
 }
 .features-list-item:nth-child(1)::before {
-  background-image: url("./img/group-1.jpg");
+  background-image: url("../img/group-1.jpg");
 }
 .features-list-item:nth-child(2)::before {
-  background-image: url("./img/group-2.jpg");
+  background-image: url("../img/group-2.jpg");
 }
 .features-list-item:nth-child(3)::before {
-  background-image: url("./img/group-3.jpg");
+  background-image: url("../img/group-3.jpg");
 }
 .features-list-item:nth-child(4)::before {
-  background-image: url("./img/group-4.png");
+  background-image: url("../img/group-4.png");
 }
 .features-list-item h3 {
   font-size: 14px;
