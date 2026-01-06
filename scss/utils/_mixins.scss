@@ -1,0 +1,41 @@
+@mixin transition($props...) {
+  transition: $props 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@mixin flex($justify: flex-start, $align: center, $gap: null) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+
+  @if $gap {
+    gap: $gap;
+  }
+}
+
+@mixin grid($cols, $gap: 30px) {
+  display: grid;
+  grid-template-columns: $cols;
+  gap: $gap;
+}
+
+@mixin container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+@mixin button-primary {
+  background-color: #2196f3;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  @include transition(background-color, transform, box-shadow);
+
+  &:hover,
+  &:focus-visible {
+    background-color: rgb(13, 138, 238);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+}
