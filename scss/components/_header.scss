@@ -1,0 +1,94 @@
+/* ===== HEADER ===== */
+.header {
+  padding: 24px 0;
+  border-bottom: 1px solid $color-white;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    font-family: $font-logo;
+    font-size: 24px;
+    font-weight: 700;
+    color: $color-primary;
+    text-decoration: none;
+  }
+
+  &__logo-accent {
+    color: $color-dark;
+  }
+}
+
+/* ===== NAVIGATION ===== */
+.nav {
+  &__list {
+    display: flex;
+    gap: 30px;
+  }
+
+  &__link {
+    position: relative;
+    font-weight: 500;
+    color: $color-dark;
+    text-decoration: none;
+    transition: color 250ms $transition-main;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -4px;
+      width: 0;
+      height: 3px;
+      background-color: $color-primary;
+      transition: width 250ms $transition-main;
+    }
+
+    &:hover,
+    &--active {
+      color: $color-primary;
+    }
+
+    &:hover::after,
+    &--active::after {
+      width: 100%;
+    }
+  }
+}
+
+/* ===== CONTACTS ===== */
+.contacts {
+  display: flex;
+  gap: 30px;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__link {
+    font-size: 14px;
+    color: $color-gray;
+    text-decoration: none;
+    transition: color 250ms $transition-main;
+  }
+
+  &__icon {
+    width: 20px;
+    height: 20px;
+    fill: $color-gray;
+    transition: fill 250ms $transition-main;
+  }
+
+  &__item:hover &__link {
+    color: $color-primary;
+  }
+
+  &__item:hover &__icon {
+    fill: $color-primary;
+  }
+}
