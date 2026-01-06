@@ -39,7 +39,6 @@
     }
   }
 
-  /* модифікатори — ЯК У ТВОЄМУ HTML */
   &__item--name {
     margin-top: 15px;
     font-weight: 500;
@@ -51,14 +50,12 @@
   }
 }
 
-/* ===== SECTION TITLE ===== */
 .section__title {
   text-align: center;
   font-size: 36px;
   margin-bottom: 50px;
 }
 
-/* ===== SOCIAL ICONS ===== */
 .social {
   &__icons {
     display: flex;
@@ -95,4 +92,5 @@
       fill: #fff;
     }
   }
+
 }
