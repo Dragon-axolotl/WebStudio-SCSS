@@ -1,3 +1,4 @@
+// STUDIO
 @media (min-width: 480px) {
   .features__list { 
     grid-template-columns: repeat(2, 1fr); 
@@ -36,5 +37,27 @@
   .work__list { 
     grid-template-columns: repeat(3, 1fr); 
   }
+}
 
+// PORTFOLIO
+@media (min-width: 480px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .filters {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+  }
 }
