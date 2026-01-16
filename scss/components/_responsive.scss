@@ -41,9 +41,10 @@
 
 // PORTFOLIO
 @media (min-width: 480px) {
-  .grid {
-    grid-template-columns: repeat(2, 1fr);
+  .grid > * {
+    flex: 1 1 calc(50% - 30px);
   }
+
   .filters {
     flex-direction: row;
     justify-content: center;
@@ -51,13 +52,13 @@
 }
 
 @media (min-width: 768px) {
-  .grid {
-    grid-template-columns: repeat(3, 1fr);
+  .grid > * {
+    flex: 1 1 calc(33.333% - 30px);
   }
 }
 
 @media (min-width: 1200px) {
-  .grid {
-    grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+  .grid > * {
+    flex: 1 1 370px;
   }
 }
