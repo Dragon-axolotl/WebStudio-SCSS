@@ -56,7 +56,9 @@
         <nav class="nav">
           <ul class="nav__list menu">
             <li class="nav__item">
-              <a href="./index.html" class="link nav__link nav__link--active">Студія</a>
+              <a href="./index.html" class="link nav__link nav__link--active"
+                >Студія</a
+              >
             </li>
             <li class="nav__item">
               <a href="./portfolio.html" class="link nav__link">Портфоліо</a>
@@ -142,15 +144,35 @@
 
         <ul class="work__list">
           <li class="work__list--item">
-            <img src="./img/desktop-app.jpg" alt="" />
+            <picture>
+              <source
+                srcset="./img/desktop-app.jpg 1x, ./img/desktop-app2x.jpg 2x"
+                media="(min-width: 768px)"
+                type="image/jpeg"
+              />
+              <img src="./img/desktop-app.jpg" alt="desktop-app" />
+            </picture>
             <p class="work__text">Десктопні додатки</p>
           </li>
           <li class="work__list--item">
-            <img src="./img/mobile-app.jpg" alt="" />
+            <picture>
+              <source
+                srcset="./img/mobile-app.jpg 1x, ./img/mobile-app2x.jpg 2x"
+                media="(min-width: 768px)"
+                type="image/jpeg"
+              />
+              <img src="./img/mobile-app.jpg" alt="mobile-app" />
+            </picture>
             <p class="work__text">Мобільні додатки</p>
           </li>
           <li class="work__list--item">
-            <img src="./img/design.jpg" alt="" />
+            <picture>
+              <source srcset="./img/design.jpg 1x, ./img/design2x.jpg 2x"
+                media="(min-width: 768px)"
+                type="image/jpeg"
+              />
+              <img src="./img/design.jpg" alt="design" />
+            </picture>
             <p class="work__text">Дизайнерські рішення</p>
           </li>
         </ul>
@@ -164,7 +186,12 @@
 
         <ul class="team__list">
           <li class="team__item">
-            <img src="./img/igor-demianenko.jpg" alt="Ігор Дем'яненко" />
+            <picture>
+              <source srcset="./img/igor-demianenko.jpg 1x, ./img/igor-demianenko2x.jpg 2x"
+              media="(min-width: 768px)"
+                type="image/jpeg">
+              <img src="./img/igor-demianenko.jpg" alt="Ігор Дем'яненко" />
+            </picture>
             <h3 class="team__item--name">Ігор Дем'яненко</h3>
             <p class="team__item--role">Product Designer</p>
             <div class="social__icons">
@@ -192,7 +219,12 @@
           </li>
 
           <li class="team__item">
-            <img src="./img/olga-repina.jpg" alt="Ольга Рєпіна" />
+            <picture>
+              <source srcset="./img/olga-repina.jpg 1x, ./img/olga-repina2x.jpg 2x"
+              media="(min-width: 768px)"
+                type="image/jpeg">
+                <img src="./img/olga-repina.jpg" alt="Ольга Рєпіна" />
+            </picture>
             <h3 class="team__item--name">Ольга Рєпіна</h3>
             <p class="team__item--role">Frontend Developer</p>
             <div class="social__icons">
@@ -220,7 +252,12 @@
           </li>
 
           <li class="team__item">
-            <img src="./img/mykola-tarasov.jpg" alt="Микола Тарасов" />
+            <picture>
+              <source srcset="./img/mykola-tarasov.jpg 1x, ./img/mykola-tarasov2x.jpg 2x"
+              media="(min-width: 768px)"
+                type="image/jpeg">
+                 <img src="./img/mykola-tarasov.jpg" alt="Микола Тарасов" />
+            </picture>
             <h3 class="team__item--name">Микола Тарасов</h3>
             <p class="team__item--role">Marketing</p>
             <div class="social__icons">
@@ -238,7 +275,7 @@
                 ><svg class="social__icon">
                   <use
                     xlink:href="./symbol-defs.svg#icon-facebook_white"
-                  ></use></svg ></a>
+                  ></use></svg></a>
               <a href="#"
                 ><svg class="social__icon">
                   <use
@@ -248,7 +285,12 @@
           </li>
 
           <li class="team__item">
-            <img src="./img/mykhailo-iermakov.jpg" alt="Микола Єрмаков" />
+            <picture>
+              <source srcset="./img/mykhailo-iermakov.jpg 1x, ./img/mykhailo-iermakov2x.jpg 2x"
+              media="(min-width: 768px)"
+                type="image/jpeg">
+                <img src="./img/mykhailo-iermakov.jpg" alt="Микола Єрмаков" />
+            </picture>
             <h3 class="team__item--name">Микола Єрмаков</h3>
             <p class="team__item--role">UI Desinger</p>
             <div class="social__icons">
@@ -266,7 +308,7 @@
                 ><svg class="social__icon">
                   <use
                     xlink:href="./symbol-defs.svg#icon-facebook_white"
-                  ></use></svg ></a>
+                  ></use></svg></a>
               <a href="#"
                 ><svg class="social__icon">
                   <use
@@ -284,12 +326,43 @@
         <h2 class="section__title">Постійні клієнти</h2>
 
         <ul class="clients__list">
-          <li><img src="./img/client-1.png" alt="" /></li>
-          <li><img src="./img/client-2.png" alt="" /></li>
-          <li><img src="./img/client-3.png" alt="" /></li>
-          <li><img src="./img/client-4.jpg" alt="" /></li>
-          <li><img src="./img/client-5.png" alt="" /></li>
-          <li><img src="./img/client-6.png" alt="" /></li>
+          <li>
+            <picture>
+              <source srcset="./img/client-1.png 1x, ./img/client-1-2x.png 2x"
+              media="(min-width: 768px)"
+                type="image/png">
+              <img src="./img/client-1.png" alt="" />
+            </picture></li>
+          <li>
+            <picture>
+              <source srcset="./img/client-2.png 1x, ./img/client-2-2x.png 2x"
+              media="(min-width: 768px)"
+                type="image/png">
+            </picture><img src="./img/client-2.png" alt="" /></li>
+          <li>
+            <picture>
+              <source srcset="./img/client-3.png 1x, ./img/client-3-2x.png 2x"
+              media="(min-width: 768px)"
+                type="image/png">
+            </picture><img src="./img/client-3.png" alt="" /></li>
+          <li>
+            <picture>
+              <source srcset="./img/client-4.jpg 1x, ./img/client-4-2x.png 2x"
+              media="(min-width: 768px)"
+                type="image/jpeg">
+            </picture><img src="./img/client-4.jpg" alt="" /></li>
+          <li>
+            <picture>
+              <source srcset="./img/client-5.png 1x, ./img/client-5-2x.png 2x"
+              media="(min-width: 768px)"
+                type="image/png">
+            </picture><img src="./img/client-5.png" alt="" /></li>
+          <li>
+            <picture>
+              <source srcset="./img/client-6.png 1x, ./img/client-6-2x.png 2x"
+              media="(min-width: 768px)"
+                type="image/png">
+            </picture><img src="./img/client-6.png" alt="" /></li>
         </ul>
       </div>
     </section>
