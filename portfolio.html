@@ -54,12 +54,14 @@
         <nav class="nav">
           <ul class="nav__list menu">
             <li class="nav__item">
-              <a href="./index.html" class="link nav__link"
-                >Студія</a
-              >
+              <a href="./index.html" class="link nav__link">Студія</a>
             </li>
             <li class="nav__item">
-              <a href="./portfolio.html" class="link nav__link nav__link--active">Портфоліо</a>
+              <a
+                href="./portfolio.html"
+                class="link nav__link nav__link--active"
+                >Портфоліо</a
+              >
             </li>
             <li class="nav__item">
               <a href="./contacts.html" class="link nav__link">Контакти</a>
@@ -89,7 +91,6 @@
       </div>
     </header>
 
-
     <main>
       <section class="portfolio">
         <div class="container">
@@ -105,38 +106,67 @@
             <li class="card hover">
               <div class="img__wrapper">
                 <picture>
-                  <source srcset="./img/technocrack.jpg 1x, ./img/technocrack2x.jpg 2x"
-                  media="(min-width: 768px)"
-                    type="image/jpeg">
-                    <img src="./img/technocrack.jpg" alt="Технокряк" />
+                  <source
+                    srcset="
+                      ./img/technocrack.jpg   1x,
+                      ./img/technocrack2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/technocrack.jpg   1x,
+                      ./img/technocrack2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/technocrack.jpg   1x,
+                      ./img/technocrack2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img src="./img/technocrack.jpg" alt="Технокряк" />
                 </picture>
-                <div class="overlay__text">
-                  Ресурс пропонує комплексні пропозиції з різним рівнем
-                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
-                  вичерпні відомості про компанію чи приватну особу.
-                </div>
+                <div class="overlay__text">...</div>
               </div>
               <div class="info">
                 <h3>Технокряк</h3>
                 <p>Веб-сайт</p>
               </div>
             </li>
+
             <li class="card hover">
               <div class="img__wrapper">
                 <picture>
-                  <source srcset="./img/poster-new-orlean.jpg 1x, ./img/poster-new-orlean2x.jpg 2x"
-                  media="(min-width: 768px)"
-                    type="image/jpeg">
-                    <img
-                      src="./img/poster-new-orlean.jpg"
-                      alt="Постер New Orlean"
-                    />
+                  <source
+                    srcset="
+                      ./img/poster-new-orlean.jpg   1x,
+                      ./img/poster-new-orlean2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/poster-new-orlean.jpg   1x,
+                      ./img/poster-new-orlean2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/poster-new-orlean.jpg   1x,
+                      ./img/poster-new-orlean2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    src="./img/poster-new-orlean.jpg"
+                    alt="Постер New Orlean"
+                  />
                 </picture>
-                <div class="overlay__text">
-                  Ресурс пропонує комплексні пропозиції з різним рівнем
-                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
-                  вичерпні відомості про компанію чи приватну особу.
-                </div>
+                <div class="overlay__text">...</div>
               </div>
               <div class="info">
                 <h3>Постер New Orlean vs Golden Star</h3>
@@ -147,19 +177,33 @@
             <li class="card hover">
               <div class="img__wrapper">
                 <picture>
-                  <source srcset="./img/restaurant-seafood.jpg 1x, ./img/restaurant-seafood2x.jpg 2x"
-                  media="(min-width: 768px)"
-                    type="image/jpeg">
-                    <img
-                      src="./img/restaurant-seafood.jpg"
-                      alt="Ресторан Seafood"
-                    />
+                  <source
+                    srcset="
+                      ./img/restaurant-seafood.jpg   1x,
+                      ./img/restaurant-seafood2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/restaurant-seafood.jpg   1x,
+                      ./img/restaurant-seafood2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/restaurant-seafood.jpg   1x,
+                      ./img/restaurant-seafood2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    src="./img/restaurant-seafood.jpg"
+                    alt="Ресторан Seafood"
+                  />
                 </picture>
-                <div class="overlay__text">
-                  Ресурс пропонує комплексні пропозиції з різним рівнем
-                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
-                  вичерпні відомості про компанію чи приватну особу.
-                </div>
+                <div class="overlay__text">...</div>
               </div>
               <div class="info">
                 <h3>Ресторан Seafood</h3>
@@ -170,16 +214,30 @@
             <li class="card hover">
               <div class="img__wrapper">
                 <picture>
-                  <source srcset="./img/project-prime.jpg 1x, ./img/project-prime2x.jpg 2x"
-                  media="(min-width: 768px)"
-                    type="image/jpeg">
-                    <img src="./img/project-prime.jpg" alt="Проєкт Prime" />
+                  <source
+                    srcset="
+                      ./img/project-prime.jpg   1x,
+                      ./img/project-prime2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/project-prime.jpg   1x,
+                      ./img/project-prime2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/project-prime.jpg   1x,
+                      ./img/project-prime2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img src="./img/project-prime.jpg" alt="Проєкт Prime" />
                 </picture>
-                <div class="overlay__text">
-                  Ресурс пропонує комплексні пропозиції з різним рівнем
-                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
-                  вичерпні відомості про компанію чи приватну особу.
-                </div>
+                <div class="overlay__text">...</div>
               </div>
               <div class="info">
                 <h3>Проєкт Prime</h3>
@@ -190,16 +248,30 @@
             <li class="card hover">
               <div class="img__wrapper">
                 <picture>
-                  <source srcset="./img/project-boxes.jpg 1x, ./img/project-boxes2x.jpg 2x"
-                  media="(min-width: 768px)"
-                    type="image/jpeg">
-                    <img src="./img/project-boxes.jpg" alt="Проєкт Boxes" />
+                  <source
+                    srcset="
+                      ./img/project-boxes.jpg   1x,
+                      ./img/project-boxes2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/project-boxes.jpg   1x,
+                      ./img/project-boxes2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/project-boxes.jpg   1x,
+                      ./img/project-boxes2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img src="./img/project-boxes.jpg" alt="Проєкт Boxes" />
                 </picture>
-                <div class="overlay__text">
-                  Ресурс пропонує комплексні пропозиції з різним рівнем
-                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
-                  вичерпні відомості про компанію чи приватну особу.
-                </div>
+                <div class="overlay__text">...</div>
               </div>
               <div class="info">
                 <h3>Проєкт Boxes</h3>
@@ -210,19 +282,33 @@
             <li class="card hover">
               <div class="img__wrapper">
                 <picture>
-                  <source srcset="./img/inspiration-has-no-borders.jpg 1x, ./img/inspiration-has-no-borders2x.jpg 2x"
-                  media="(min-width: 768px)"
-                    type="image/jpeg">
-                    <img
-                      src="./img/inspiration-has-no-borders.jpg"
-                      alt="Inspiration has no Borders"
-                    />
+                  <source
+                    srcset="
+                      ./img/inspiration-has-no-borders.jpg   1x,
+                      ./img/inspiration-has-no-borders2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/inspiration-has-no-borders.jpg   1x,
+                      ./img/inspiration-has-no-borders2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/inspiration-has-no-borders.jpg   1x,
+                      ./img/inspiration-has-no-borders2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    src="./img/inspiration-has-no-borders.jpg"
+                    alt="Inspiration has no Borders"
+                  />
                 </picture>
-                <div class="overlay__text">
-                  Ресурс пропонує комплексні пропозиції з різним рівнем
-                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
-                  вичерпні відомості про компанію чи приватну особу.
-                </div>
+                <div class="overlay__text">...</div>
               </div>
               <div class="info">
                 <h3>Inspiration has no Borders</h3>
@@ -230,22 +316,37 @@
               </div>
             </li>
 
+            <!-- ВИПРАВЛЕНА ТА САМА ЗЛАМАНА КАРТКА -->
             <li class="card hover">
               <div class="img__wrapper">
-                <picture></picture>
-                  <source srcset="./img/limited-edition.jpg 1x, ./img/limited-edition2x.jpg 2x"
-                  media="(min-width: 768px)"
-                    type="image/jpeg">
-                    <img
-                      src="./img/limited-edition.jpg"
-                      alt="Видання Limited Edition"
-                    />
+                <picture>
+                  <source
+                    srcset="
+                      ./img/limited-edition.jpg   1x,
+                      ./img/limited-edition2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/limited-edition.jpg   1x,
+                      ./img/limited-edition2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/limited-edition.jpg   1x,
+                      ./img/limited-edition2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    src="./img/limited-edition.jpg"
+                    alt="Видання Limited Edition"
+                  />
                 </picture>
-                <div class="overlay__text">
-                  Ресурс пропонує комплексні пропозиції з різним рівнем
-                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
-                  вичерпні відомості про компанію чи приватну особу.
-                </div>
+                <div class="overlay__text">...</div>
               </div>
               <div class="info">
                 <h3>Видання Limited Edition</h3>
@@ -256,16 +357,30 @@
             <li class="card hover">
               <div class="img__wrapper">
                 <picture>
-                  <source srcset="./img/project-lab.jpg 1x, ./img/project-lab2x.jpg 2x"
-                  media="(min-width: 768px)"
-                    type="image/jpeg">
-                    <img src="./img/project-lab.jpg" alt="Проєкт LAB" />
+                  <source
+                    srcset="
+                      ./img/project-lab.jpg   1x,
+                      ./img/project-lab2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/project-lab.jpg   1x,
+                      ./img/project-lab2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/project-lab.jpg   1x,
+                      ./img/project-lab2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img src="./img/project-lab.jpg" alt="Проєкт LAB" />
                 </picture>
-                <div class="overlay__text">
-                  Ресурс пропонує комплексні пропозиції з різним рівнем
-                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
-                  вичерпні відомості про компанію чи приватну особу.
-                </div>
+                <div class="overlay__text">...</div>
               </div>
               <div class="info">
                 <h3>Проєкт LAB</h3>
@@ -276,16 +391,33 @@
             <li class="card hover">
               <div class="img__wrapper">
                 <picture>
-                  <source srcset="./img/growing-business.jpg 1x, ./img/growing-business2x.jpg 2x"
-                  media="(min-width: 768px)"
-                    type="image/jpeg">
-                    <img src="./img/growing-business.jpg" alt="Growing Business" />
+                  <source
+                    srcset="
+                      ./img/growing-business.jpg   1x,
+                      ./img/growing-business2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/growing-business.jpg   1x,
+                      ./img/growing-business2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/growing-business.jpg   1x,
+                      ./img/growing-business2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    src="./img/growing-business.jpg"
+                    alt="Growing Business"
+                  />
                 </picture>
-                <div class="overlay__text">
-                  Ресурс пропонує комплексні пропозиції з різним рівнем
-                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
-                  вичерпні відомості про компанію чи приватну особу.
-                </div>
+                <div class="overlay__text">...</div>
               </div>
               <div class="info">
                 <h3>Growing Business</h3>
@@ -379,7 +511,7 @@
       </div>
     </footer>
 
-     <!-- MOBILE MENU -->
+    <!-- MOBILE MENU -->
     <div class="menu-container js-menu-container" id="mobile-menu">
       <button class="menu-toggle js-close-menu">
         <svg
